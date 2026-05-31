@@ -120,6 +120,17 @@ questions = [
         }
     },
     {
+        "question": "経済的余力に応じて自己負担比率を変えるべきだ",
+        "original": "original question",
+        "effect": {
+            "econ": 10,
+            "dipl": 0,
+            "govt": 0,
+            "scty": 0
+        }
+    },
+/*
+    {
         "question": "より多く金を払える人は、よりよい医療を受けられるべきだ",
 "original": "Those with a greater ability to pay should receive better healthcare.",
         "effect": {
@@ -129,6 +140,7 @@ questions = [
             "scty": 0
         }
     },
+*/
     {
         "question": "すべての人々は質の高い教育をうける権利がある",
 "original": "Quality education is a right of all people.",
@@ -159,9 +171,21 @@ questions = [
             "scty": 0
         }
     },
+/*
     {
         "question": "多くの場合、わが国を守るためには軍事行動が不可欠である",
 "original": "Military action by our nation is often necessary to protect it.",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": -10,
+            "scty": 0
+        }
+    },
+*/
+    {
+        "question": "自国の存立が脅かされているかにかかわらず、必要なら集団的自衛権を行使すべきだ",
+        "original": "original question",
         "effect": {
             "econ": 0,
             "dipl": -10,
@@ -230,6 +254,26 @@ questions = [
         }
     },
     {
+        "question": "憲法9条を廃止もしくは改正すべきだ",
+        "original": "original question",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": 10,
+            "scty": 0
+        }
+    },
+    {
+        "question": "核兵器を開発・保有すべきである",
+        "original": "original question",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": 10,
+            "scty": 0
+        }
+    },
+    {
         "question": "国際援助は金の無駄だ",
 "original": "International aid is a waste of money.",
         "effect": {
@@ -279,6 +323,8 @@ questions = [
             "scty": 0
         }
     },
+/*
+delete
     {
         "question": "私の宗教的価値観はできる限り広めるべきものだ",
 "original": "My religious values should be spread as much as possible.",
@@ -289,6 +335,7 @@ questions = [
             "scty": -10
         }
     },
+*/
     {
         "question": "わが国の価値観はできる限り広めるべきものだ",
 "original": "Our nation's values should be spread as much as possible.",
@@ -440,8 +487,8 @@ questions = [
         }
     },
     {
-        "question": "子どもたちは宗教的または伝統的価値観に基づく教育を受けるべきだ",
-"original": "Children should be educated in religious or traditional values.",
+        "question": "子どもたちは伝統的価値観に基づく教育を受けるべきだ",
+"original": "Children should be educated in religious or traditional values.(some change)",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -460,18 +507,18 @@ questions = [
         }
     },
     {
-        "question": "宗教は政府に影響力を持つべきだ",
-"original": "Religion should play a role in government.",
+        "question": "宗教は政治にかかわるべきではない",
+"original": "Religion should play a role in government.(changed)",
         "effect": {
             "econ": 0,
             "dipl": 0,
-            "govt": -10,
-            "scty": -10
+            "govt": 10,
+            "scty": 10
         }
     },
     {
-        "question": "教会などの宗教団体も、他の団体と同様の制度に基づき課税されるべきだ",
-"original": "Churches should be taxed the same way other institutions are taxed.",
+        "question": "神社仏閣や教会などの宗教団体も、他の団体と同様の制度に基づき課税されるべきだ",
+"original": "Churches should be taxed the same way other institutions are taxed.(some change)",
         "effect": {
             "econ": 5,
             "dipl": 0,
@@ -569,6 +616,8 @@ questions = [
             "scty": 10
         }
     },
+/*
+delete
     {
         "question": "結婚していない者同士の性交渉は不道徳だ",
 "original": "Sex outside marriage is immoral.",
@@ -579,6 +628,7 @@ questions = [
             "scty": -10
         }
     },
+*/
     {
         "question": "移民を認めることを前提として、移住者たちはわれわれの文化に同化する必要がある",
 "original": "If we accept migrants at all, it is important that they assimilate into our culture.",
@@ -589,6 +639,8 @@ questions = [
             "scty": -10
         }
     },
+/*
+delete 3
     {
         "question": "人工妊娠中絶は強く制限ないしは禁止されるべきだ",
 "original": "Abortion should be prohibited in most or all cases.",
@@ -616,6 +668,27 @@ questions = [
             "econ": 10,
             "dipl": 0,
             "govt": 0,
+            "scty": 0
+        }
+    },
+*/
+    {
+        "question": "学校での平和教育を推し進めるべきだ",
+        "original": "original question",
+        "effect": {
+            "econ": 0,
+            "dipl": -10,
+            "govt": 10,
+            "scty": 0
+        }
+    },
+    {
+        "question": "高齢者の医療費や介護費用を引き上げるべきである",
+        "original": "original question",
+        "effect": {
+            "econ": -10,
+            "dipl": 0,
+            "govt": 10,
             "scty": 0
         }
     },
@@ -659,9 +732,21 @@ questions = [
             "scty": 10
         }
     },
+/*
     {
         "question": "国境を開放し、自由に移民できるようにするべきだ",
 "original": "We should open our borders to immigration.",
+        "effect": {
+            "econ": 0,
+            "dipl": 10,
+            "govt": 10,
+            "scty": 0
+        }
+    },
+*/
+    {
+        "question": "移民受け入れをもっと増やすべきだ",
+        "original": "We should open our borders to immigration.(some change)",
         "effect": {
             "econ": 0,
             "dipl": 10,

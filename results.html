@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     
-    <title>診断結果｜日本語版8values</title>
+    <title>診断結果｜日本向け8values</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
@@ -14,16 +14,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <script type="application/javascript" src="ideologies.js"></script>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <!--
     <link rel="icon" type="image/png" href="favicon/icon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="favicon/icon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon/icon-192x192.png">
     <link rel="apple-touch-icon" type="image/png" href="favicon/apple-touch-icon-180x180.png">
+    -->
 </head>
 
 <script type="application/javascript" src="ideologies.js"></script>
 
 <body>
-<h1 class="top">日本語版8values</h1>
+<h1 class="top">日本向け8values</h1>
 <hr>
 
 <h1>診断結果</h1>
@@ -235,13 +238,18 @@ function setLabel(val,ary) {
         }
     }
 
+    //背景画像読み込み
+    let bgImg = new Image()
+    bgImg.src = './background.png'
+
     window.onload = function() {
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
         c.height = 650;
-        ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,650);
+        //ctx.fillStyle = "#ffffff"
+        //ctx.fillRect(0,0,800,650);
+        ctx.drawImage(bgImg, 0, 0)
 
         img = document.getElementById("img-equality")
         ctx.drawImage(img, 20, 170, 100, 100);
@@ -284,7 +292,7 @@ function setLabel(val,ary) {
         ctx.fillStyle="#222222"
         ctx.font="700 55px 'Noto Sans JP'"
         ctx.textAlign="left"
-        ctx.fillText("日本語版8values", 20, 90)
+        ctx.fillText("日本向け8values", 20, 90)
         ctx.font="45px 'Noto Sans JP'"
         ctx.fillText(ideology, 20, 140)
 
@@ -300,7 +308,7 @@ function setLabel(val,ary) {
         if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
 
         ctx.font="300 30px 'Noto Sans JP'"
-        ctx.fillText("8values-ja.github.io", 780, 60)
+        ctx.fillText("Japanize-8values", 780, 60)
 		ctx.fillText(today, 780, 90)
         ctx.textAlign="center"
         ctx.fillText("「経済」: " + document.getElementById("economic-label").innerHTML, 400, 175)
